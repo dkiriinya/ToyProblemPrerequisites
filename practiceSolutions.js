@@ -1,12 +1,17 @@
-// problem 1
+// Problem 1: Bubble Sort
+
+// Function to perform bubble sort on an array
 function bubbleSort(arr) {
     let swapped;
   
+    // Repeat until no more swaps are needed
     do {
       swapped = false;
+  
+      // Iterate through the array
       for (let i = 0; i < arr.length - 1; i++) {
+        // Compare adjacent elements and swap if in the wrong order
         if (arr[i] > arr[i + 1]) {
-          // Swap elements if they are in the wrong order
           let temp = arr[i];
           arr[i] = arr[i + 1];
           arr[i + 1] = temp;
@@ -15,30 +20,38 @@ function bubbleSort(arr) {
       }
     } while (swapped);
   
-    return arr;
+    return arr; // Return the sorted array
   }
   
   // Example usage:
-  let unsortedArray = [5,6,1,3,4,2];
+  let unsortedArray = [5, 6, 1, 3, 4, 2];
   let sortedArray = bubbleSort(unsortedArray.slice());
   console.log("Sorted Array:", sortedArray);
-
-// problem 2
-function staircase(num) {
-    for(let i = 0; i<= num; i++){
-        console.log('#'.repeat(i))
+  
+  
+  // Problem 2: Staircase
+  
+  // Function to print a staircase pattern with '#' character
+  function staircase(num) {
+    for (let i = 0; i <= num; i++) {
+      console.log('#'.repeat(i)); // Log '#' repeated 'i' times
     }
-}
-staircase(8)
-
-// problem 3
-let volume = {
+  }
+  
+  // Example usage:
+  staircase(8);
+  
+  
+  // Problem 3: Calculate Volume
+  
+  // Object representing volume with π, radius (r), and height (h)
+  let volume = {
     π: Math.PI,
     r: 6,
     h: 4
-}
-let v = volume.π * volume.r * 2 * volume.h
-console.log(v)
-
-
+  }
+  
+  // Calculate the volume of a cylinder using the formula V = π * r^2 * h
+  let v = volume.π * Math.pow(volume.r, 2) * volume.h;
+  console.log(v); // Log the calculated volume
   
