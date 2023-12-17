@@ -83,6 +83,7 @@ rl.question("What is your monthly income: ", (grossSalary) => {
         console.log(`NHIF contribution: ${NHIF}`);
         console.log(`NSSF contribution: ${NSSF}`);
         console.log(`Net Salary: ${netSalary}`);
+        console.log("This are estimates and are non factual");
 
         // Close the readline interface
         rl.close();
