@@ -79,7 +79,6 @@ rl.question("What is your monthly income: ", (grossSalary) => {
         const netSalary = grossSalary - PAYE - NHIF - NSSF;
 
         // Output results
-        console.log(`Gross Salary: ${grossSalary}`);
         console.log(`PAYE owed: ${PAYE}`);
         console.log(`NHIF contribution: ${NHIF}`);
         console.log(`NSSF contribution: ${NSSF}`);
