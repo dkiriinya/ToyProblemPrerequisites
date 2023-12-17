@@ -48,6 +48,9 @@ The staircase function prints a staircase pattern using the '#' character. It ta
 Problem 3: Calculate Volume
 The code defines an object volume representing the parameters of a cylinder (π, radius r, and height h). It then calculates the volume of the cylinder using the formula V = π * r^2 * h. The calculated volume is logged to the console.
 
+### Packages
+there are different packages that help in running the three challenges. 
+
 
 ## Setup Instructions
 Follow these steps to set up and run the Toy Problems Prerequisite project on your local machine.
@@ -71,7 +74,7 @@ Open the project in Visual Studio Code:
 Each challenge is implemented in a separate JavaScript file. To run a specific challenge, open the corresponding file in Visual Studio Code and execute it using the integrated terminal or an external terminal.
 
 #### Challenge 1: Grade Calculator
-node challenge1.js
+node Challenge1.js
 
 write an input and it will give you a grade corresponding to your input
 
@@ -80,10 +83,12 @@ open Challenge2.js
 
 in the final statement, instead of 140, write your own speed that will give you a corresponding output. either 1 point for every 5km/s exceeded, ok if its below or 70 km/s, license Suspended if acquired 12 or more points
 
+it also consists of two other inputs that give corresponding output.
+
 node challenge2.js
 
 #### Challenge 3: Net Salary Calculator
-node challenge3.js
+node Challenge3.js
 enter an example monthly income.
 it will output several parameters. this include gross salary after deducting contributions, paye, nhif contribution, nssf contribution , net salary
 

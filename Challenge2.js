@@ -32,3 +32,5 @@ console.log(speedDetector(60));
 //Example usage with a speed of 60
 console.log(speedDetector(90))
 
+
+
