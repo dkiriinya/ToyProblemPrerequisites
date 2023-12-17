@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "toyproblemsprerequisites",
+  "description": "## Table of Contents",
+  "version": "1.0.0",
+  "main": "Challenge1.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

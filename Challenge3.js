@@ -21,21 +21,6 @@ rl.question("What is your monthly income: ", (grossSalary) => {
         let NSSF = 0.06 * grossSalary;
         NSSF = Math.min(NSSF, 18000); // Cap NSSF at 18000
         grossSalary -= NSSF;
-
-        // Calculate PAYE
-        let PAYE;
-        if (grossSalary <= 24000) {
-            PAYE = grossSalary * 0.1;
-        } else if (grossSalary <= 32333) {
-            PAYE = grossSalary * 0.25;
-        } else if (grossSalary <= 500000) {
-            PAYE = grossSalary * 0.3;
-        } else if (grossSalary <= 800000) {
-            PAYE = grossSalary * 0.325;
-        } else {
-            PAYE = grossSalary * 0.35;
-        }
-
         // Calculate NHIF contribution
         let NHIF;
         // NHIF calculation based on grossSalary
@@ -74,9 +59,26 @@ rl.question("What is your monthly income: ", (grossSalary) => {
         } else {
             NHIF = 1700;
         }
+        grossSalary -= NHIF
 
+
+        // Calculate PAYE
+        let PAYE;
+        if (grossSalary <= 24000) {
+            PAYE = grossSalary * 0.1;
+        } else if (grossSalary <= 32333) {
+            PAYE = grossSalary * 0.25;
+        } else if (grossSalary <= 500000) {
+            PAYE = grossSalary * 0.3;
+        } else if (grossSalary <= 800000) {
+            PAYE = grossSalary * 0.325;
+        } else {
+            PAYE = grossSalary * 0.35;
+        }
+
+        
         // Calculate net salary
-        const netSalary = grossSalary - PAYE - NHIF - NSSF;
+        const netSalary = grossSalary - PAYE;
 
         // Output results
         console.log(`PAYE owed: ${PAYE}`);
