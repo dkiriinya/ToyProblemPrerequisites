@@ -13,6 +13,7 @@
       - [Challenge 1: Grade Calculator](#challenge-1-grade-calculator)
       - [Challenge 2: Speed Demerit Points](#challenge-2-speed-demerit-points)
       - [Challenge 3: Net Salary Calculator](#challenge-3-net-salary-calculator)
+      - [Practice Solotutions](#practice-solotutions)
 
 
 
@@ -36,6 +37,16 @@ Speed: 80 km/s, Output: "Points: 2"
 
 ### 3. Challenge 3: Net Salary Calculator (File: challenge3.js)
 The challenge3.js file contains a program designed to calculate an individual's Net Salary. It takes inputs for basic salary and benefits, then computes the Payee (Tax), NHIF Deductions, NSSF Deductions, Gross Salary, and Net Salary.
+
+### 4. practiceSolutions (NOT NECCESSARY TO RUN. JUST PRACTICE CODE)
+Problem 1: Bubble Sort
+The bubbleSort function implements the Bubble Sort algorithm to sort an array of numbers. It iterates through the array, compares adjacent elements, and swaps them if they are in the wrong order. The process repeats until the array is sorted. An example usage demonstrates sorting an array and printing the result.
+
+Problem 2: Staircase
+The staircase function prints a staircase pattern using the '#' character. It takes a numerical input to determine the number of steps in the staircase. The example usage shows how to create an 8-step staircase.
+
+Problem 3: Calculate Volume
+The code defines an object volume representing the parameters of a cylinder (π, radius r, and height h). It then calculates the volume of the cylinder using the formula V = π * r^2 * h. The calculated volume is logged to the console.
 
 
 ## Setup Instructions
@@ -75,6 +86,20 @@ node challenge2.js
 node challenge3.js
 enter an example monthly income.
 it will output several parameters. this include gross salary after deducting contributions, paye, nhif contribution, nssf contribution , net salary
+
+#### Practice Solotutions
+open practiceSolutions.js
+node practiceSolutions.js
+
+outputs three things. a sorted array through bubble sort. you can change the values on the unsorted array in practiceSolutions.js
+
+a # staircase depending on a number input. you can change the number in the called function from 8 to another desired.
+
+volume of a sphere. you can change the values of height and radius by using either volume.h = newvalue or volume.r = newvalue
+
+
+
+
 
 # Author
 
