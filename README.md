@@ -62,11 +62,19 @@ Each challenge is implemented in a separate JavaScript file. To run a specific c
 #### Challenge 1: Grade Calculator
 node challenge1.js
 
+write an input and it will give you a grade corresponding to your input
+
 #### Challenge 2: Speed Demerit Points
+open Challenge2.js
+
+in the final statement instead of 140 write your own speed that will give you a corresponding output. either 1 point for every 5km/s exceeded, ok if its below or 70 km/s, license Suspended if acquired 12 or more points
+
 node challenge2.js
 
 #### Challenge 3: Net Salary Calculator
 node challenge3.js
+enter an example monthly income.
+it will output several parameters. this include gross salary after deducting contributions, paye, nhif contribution, nssf contribution , net salary
 
 # Author
 
