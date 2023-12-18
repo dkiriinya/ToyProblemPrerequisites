@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 // Create a prompt to get the user's gross salary
 rl.question("What is your monthly income: ", (grossSalary) => {
     // Create a prompt to get the Contribution Benefit
-    rl.question("What is your Contribution Benefit (including mortgage interest amounts, insurance premiums, and home ownership total deposit): ", (contributionBenefit) => {
+    rl.question("What are your Contribution Benefits excluding (NHIF,NSSF contributions) (including mortgage interest amounts, insurance premiums, and home ownership total deposit): ", (contributionBenefit) => {
         // Convert input values to numbers
         grossSalary = parseFloat(grossSalary);
         contributionBenefit = parseFloat(contributionBenefit);
@@ -82,6 +82,7 @@ rl.question("What is your monthly income: ", (grossSalary) => {
 
         // Output results
         console.log(`PAYE owed: ${PAYE}`);
+        console.log(`Contribution benefits excluding NHIF,NSSF : ${contributionBenefit}`)
         console.log(`NHIF contribution: ${NHIF}`);
         console.log(`NSSF contribution: ${NSSF}`);
         console.log(`Net Salary: ${netSalary}`);
